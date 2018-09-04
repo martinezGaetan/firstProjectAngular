@@ -6,10 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./post-item.component.css']
 })
 export class PostItemComponent implements OnInit {
-  @Input() title: string;
-  @Input() content: string;
-  loveIts: number;
-  DislikeIts: number;
+  @Input() postTitle: string;
+  @Input() postContent: string;
+  @Input() postCreate_at: any;
+  loveIts: number = 0;
+  DislikeIts: number = 0;
 
   constructor() { }
 
@@ -17,11 +18,9 @@ export class PostItemComponent implements OnInit {
   }
 
   onLike() {
-    if (!this.loveIts) {this.loveIts = 0}
     return this.loveIts += 1
   }
   onDislike() {
-    if (!this.DislikeIts) {this.DislikeIts = 0}
     return this.DislikeIts += 1
   }
 
