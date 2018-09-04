@@ -1,17 +1,15 @@
-
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Posts</h2>
-      <ul class="list-group">
-          <app-post *ngFor="let post of posts"
-                    [postTitle]="post.title"
-                    [postContent]="post.content"
-                    [postLovIts]="post.loveIts"
-                    [postDislikeIts]="post.dislikeIts"
-                    [postCreate_at]="post.create_at">
-          </app-post>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Mes posts</h2>
+        <ul class="list-group">
+          <app-post-item title="1er post"
+                         content="aaa"></app-post-item>
+          <app-post-item title="2eme post"
+                         content="baa"></app-post-item>
+          <app-post-item title="3eme post"
+                         content="aba"></app-post-item>
         </ul>
+      </div>
     </div>
   </div>
-</div>
