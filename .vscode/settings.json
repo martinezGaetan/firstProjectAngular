@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/afpa/Documents/vEnv/django_env/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+   ]
+}
